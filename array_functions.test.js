@@ -2,7 +2,8 @@
 import {
     arrayLength,
     arrayPush,
-    arrayPop
+    arrayPop,
+    arrayUnshift
 } from './array_function.js';
 
 test('arrayLength de [1,2,3] es 3', () => {
@@ -15,4 +16,9 @@ test('arrayPush de [1,2,3] y 3 es [1,2,3,4]', () => {
 
   test('arrayPop de [1,2,3] es [1,2]', () => {
     expect(arrayPop([1,2,3])).toStrictEqual([1,2]);
+  });
+
+
+  test('arrayUnshift  de [1,2,3] y 4  es [4,1,2,3]', () => {
+    expect(arrayUnshift([1,2,3],4)).toStrictEqual([4,1,2,3]);
   });

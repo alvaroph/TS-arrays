@@ -20,3 +20,12 @@ export function arrayPop(array){
     }
     return arra2;
 }
+
+export function arrayUnshift(array, elem){
+    let arra2 = new Array();
+    arrayPush(arra2, elem);
+    for (let index = 0; index < arrayLength(array); index++) {
+        arrayPush(arra2,array[index])
+    }
+    return arra2;
+}
