@@ -18,7 +18,7 @@ export function arrayPop(array){
     for (let index = 0; index < arrayLength(array)-1; index++) {
         arrayPush(arra2,array[index])
     }
-    return arra2;
+    return arra2; 
 }
 
 export function arrayUnshift(array, elem){
